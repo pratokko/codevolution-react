@@ -1,26 +1,32 @@
-import React from "react";
+// import React from "react";
 
-const UpdatedComponent = (OriginalComponent) => {
-  class NewComponent extends React.Component {
-    constructor(props) {
-      super(props);
+// const withCounter = (WrappedComponent, incNumber) => {
+//   class WithCounter extends React.Component {
+//     constructor(props) {
+//       super(props);
 
-      this.state = {
-        count: 0,
-      };
-    }
+//       this.state = {
+//         count: 0,
+//       };
+//     }
 
-    increment = () => {
-      this.setState((prevState) => {
-        return { count: prevState.count + 1 };
-      });
-    };
+//     incrementCount = () => {
+//       this.setState((prevState) => {
+//         return { count: prevState.count + incNumber };
+//       });
+//     };
 
-    render() {
-      return <OriginalComponent count={this.state.count} increment= {this.state.increment} />;
-    }
-  }
-  return NewComponent;
-};
+//     render() {
+//       return (
+//         <WrappedComponent
+//           count={this.state.count}
+//           incrementCount={this.incrementCount}
+//           {...this.props}
+//         />
+//       );
+//     }
+//   }
+//   return WithCounter;
+// };
 
-export default UpdatedComponent;
+// export default withCounter;

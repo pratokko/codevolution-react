@@ -1,11 +1,12 @@
-import React, { Component } from "react";
-import UpdatedComponent from "./WIthCounter";
+// import React, { Component } from "react";
+// import withCounter from "./WithCounter";
 
-class HoverCounter extends Component {
-  render() {
-    const { count, increment } = this.props;
-    return <h2 onMouseOver={increment}> Hovered {count} times</h2>;
-  }
-}
 
-export default UpdatedComponent(HoverCounter);
+// class HoverCounter extends Component {
+//   render() {
+//     const { count, incrementCount } = this.props;
+//     return <h2 onMouseOver={incrementCount}> Hovered {count} times</h2>;
+//   }
+// }
+
+// export default withCounter(HoverCounter, 10);
